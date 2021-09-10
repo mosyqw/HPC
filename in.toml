@@ -1,0 +1,48 @@
+[ModbusTCP]
+Ip = "192.168.124.127"
+Port = 502
+Retry = 3
+
+[[ModbusTCP.Meter]]
+Name = "biao1"
+Address = 1
+Timeout = 3
+Interval = 100
+
+[[ModbusTCP.Meter.Par]]
+Start = 0
+Length = 20
+
+[[ModbusTCP.Meter.Par.Data]]
+Name = "Uc"
+Offset = 8
+Length = 4
+Rate = 1
+Symbol = false
+Before = false
+Flip = false
+Float = true
+
+[[ModbusTCP.Meter.Par.Data]]
+Name = "F"
+Offset = 24
+Length = 4
+Rate = 1
+Symbol = false
+Before = false
+Flip = false
+Float = true
+
+[[ModbusTCP.Meter.Par]]
+Start = 10000
+Length = 4
+
+[[ModbusTCP.Meter.Par.Data]]
+Name = "EPI"
+Offset = 0
+Length = 8
+Rate = 0.01
+Symbol = true
+Before = false
+Flip = false
+Float = false

@@ -1,0 +1,13 @@
+[MQTT]
+Broker = "127.0.0.1"
+Port = 1883
+Username = "admin"
+Password = "123456"
+Theme = "test"
+
+[MySQL]
+Ip = "127.0.0.1"
+Port = 3306
+Username = "root"
+Password = "root"
+Dbname = "iot"
